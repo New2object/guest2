@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    onchange事件常结合对输入字段的验证来使用
+    下面是一个如何使用onchange的例子。当用户改变输入字段的内容时,会调用upperCase()函数-->
+<head>
+    <meta charset="UTF-8">
+    <title>demo22</title>
+    <script>
+        function myFunction()
+        {
+            var x = document.getElementById("fname");
+            x.value= x.value.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+请输入英文字符:<input type="text" id="fname" onchange="myFunction()">
+<p>当您离开输入字段时,会触发将输入文本转换成大写的函数。</p>
+</body>
+</html>

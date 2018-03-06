@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    通过jQuery,可以很容易地删除已有的HTML元素
+    删除Element And Content,一般可使用以下两个jQuery方法:
+    * remove()-Delete被选the Elements(及其子元素)
+        $("#div1").remove();
+    * empty()-从被选Element中删除子元素
+        $("#div1").empty();
+    -->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_47</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").remove();
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="div1" style="height: 100px; width: 300px; border: 1px solid black;background-color: yellow;">
+    This is some text in the div.
+    <p>This is a paragraph in the div.</p>
+    <p>This is another paragraph in the div.</p>
+</div>
+<br>
+<button>Delete DIV Element</button>
+</body>
+</html>

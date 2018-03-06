@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+    jQuery toggleClass()方法:
+        下面的例子将展示如何使用jQuery toggleClass()方法。该方法对被选元素进行Add/Remove Class的Switch 操作:
+        $(document).ready(function(){
+            $("button").click(function(){
+            $("h1,h2,p").toggleClass("blue");
+            });
+                });
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_52</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1,h2,p").toggleClass("blue");
+            });
+        });
+    </script>
+    <style type="text/css">
+        .blue
+        {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+<h1>Title 1</h1>
+<h2>Title 2</h2>
+<p>这是一个段落.</p>
+<p>这是另一个段落.</p>
+<button>Switch CSS Class</button>
+</body>
+</html>

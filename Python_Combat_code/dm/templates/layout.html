@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <style media="screen">
+        .create-form {
+            margin: 1em auto;
+        }
+
+        .new-defect-btn {
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<script src="https://cdn.bootcss.com/marked/0.3.6/marked.min.js"></script>
+{#<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.js"></script>#}
+<body>
+<div class="container">
+    {% for message in get_flashed_messages() %}
+        <div class="alert alert-success">{{ message }}</div>
+    {% endfor %}
+    {% block body %}
+    {% endblock %}
+</div>
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+</body>
+</html>

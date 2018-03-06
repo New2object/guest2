@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--Stop()方法: 不带参数-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_30</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown(5000);
+            });
+            $("#stop").click(function(){
+                $("#panel").stop();
+            });
+        });
+    </script>
+    <style type="text/css">
+        #panel,#flip
+        {
+            padding: 5px;
+            text-align: center;
+            background-color: #9eff92;
+            border: solid 1px #c3c3c3;
+        }
+        #panel
+        {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<button id="stop">Stop Sliding</button>
+<div id="flip">点击这里,向下滑动面板</div>
+<div id="panel">Hello world!</div>
+</body>
+</html>

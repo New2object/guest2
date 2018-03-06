@@ -1,0 +1,10 @@
+<testsuite errors="1" failures="0" name="nose2-junit" skipped="0" tests="1" time="0.002">
+  <testcase classname="nose2.loader.LoadTestsFailure" name="test_login" time="0.001504">
+    <error message="test failure">Traceback (most recent call last):
+  File "C:\Users\Hasee\guest2\Webdriver_selenium\src\framework\test_login.py", line 6, in &lt;module&gt;
+    from Webdriver_selenium.src.framework.page.login_page import LoginPage
+ImportError: No module named 'Webdriver_selenium'
+</error>
+    <system-err />
+  </testcase>
+</testsuite>

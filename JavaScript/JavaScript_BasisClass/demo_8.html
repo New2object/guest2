@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--JavaScript Error-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo8</title>
+    <script>
+        var txt="";
+        function message()
+        {
+            //需要测试的代码
+            try {
+                adddlert("Welcome guest!");
+            }
+            //自定义处理错误
+            catch (err)
+            {
+                txt = "There was an error on this page. \n\n";
+                txt += "Error description: "+ err.message + "\n\n";
+                txt += "Click OK to continue. \n\n";
+                alert(txt);
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="View message" onclick="message()">
+</body>
+</html>

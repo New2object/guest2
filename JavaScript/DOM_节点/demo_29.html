@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Delete HTML Element
+  Tips: 如果能够在不引用父元素的情况下删除某个元素,就更方便了。
+        不过很遗憾,DOM需要清楚要删除的Element, 以及它的父Element。
+        这是常用的解决方案: 找到希望Delete的Element,然后使用其parentNode属性来找到父Element
+            var child=document.getElementById("p1");
+            child.parentNode.removeChild(child);-->
+<head>
+    <meta charset="UTF-8">
+    <title>demo29</title>
+</head>
+<body>
+<!--
+    这个HTML Element含有拥有两个子节点(两个<p>元素)的<div>元素:
+    -->
+<div id="div1">
+    <p id="p1">这是一个段落。</p>
+    <p id="p2">这是另一个段落。</p>
+</div>
+<script>
+    var parent=document.getElementById("div1");
+    <!--找到id="div1"的元素:-->
+    var child=document.getElementById("p1");
+    <!--找到id="p1"的<p>元素:-->
+    parent.removeChild(child);
+    <!--从父元素中删除子元素: -->
+</script>
+</body>
+</html>

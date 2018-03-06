@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    通过jQuery,可以把动作/方法链接起来。
+    Chaining允许我们在一条语句中允许多个jQuery方法(在同一个元素上)。
+
+    下面的例子把css(),slideUp(),and slideDown()链接在一起,
+    "p1"元素首先会变成red color,然后向上滑动,然后向下滑动
+    -->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_35</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#p1").css("color","red").slideUp(2000).slideDown(2000);
+            });
+        });
+    </script>
+</head>
+<body>
+<p id="p1">jQuery 乐趣十足！</p>
+<button>Click over here</button>
+</body>
+</html>

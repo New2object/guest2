@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<info>
+    <explain>126邮箱登录</explain>
+    <url>http://www.126.com</url>
+    <null username="" password="">请输入帐号</null>
+    <pawd_null username="a794281961" password="">请输入密码</pawd_null>
+    <user_null usernmae="" password="a123456">请输入帐号</user_null>
+    <error username="xxx" password="sss">帐号或密码错误</error>
+</info>

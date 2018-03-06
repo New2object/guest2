@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+    设置 CSS 属性:
+    如需设置指定的css属性,可使用如下语法:
+        css("propertyName","value");
+        下面的例子将为所有匹配元素设置background-color值:
+        $("p").css("background-color", "yellow");
+        -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript_jQuery_55</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").css("background-color","yellow");
+            });
+        });
+    </script>
+</head>
+<body>
+<h2>This is a Title.</h2>
+<p style="background-color: #ff0000">这是一个段落。</p>
+<p style="background-color: #00ff00">这是一个段落。</p>
+<p style="background-color: #0000ff">这是一个段落。</p>
+<p>这是一个段落。</p>
+<button>设置 p Element 的background-color</button>
+
+</body>
+</html>

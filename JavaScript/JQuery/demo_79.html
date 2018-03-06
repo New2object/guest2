@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--jQuery animate()-使用预定义的值
+    可以把属性的动画值设置为"show","hide"或者"toggle"-->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_25</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").animate({
+                    height:'toggle'
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<button type="button">开始动画</button>
+<p>默认情况下,所有HTML元素的位置都是静态的,并且无法移动。
+    如需对位置进行操作,记得首先把元素的CSS position 属性设置为
+    relative,fixed或absolute.</p>
+<div style="width: 100px; height: 100px; background-color: aqua;position: absolute;"></div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+    jQuery - css()方法:
+        css()方法设置或返回被选元素的一个或多个样式属性
+        返回css属性:
+            如需返回指定的css属性的值,语法如下:
+                css("pr")
+    -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_54</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert("Background color = " + $("p").css("background-color"));
+            });
+        });
+    </script>
+</head>
+<body>
+<h2>This is a title</h2>
+<p style="background-color: #ff0000">这是一个段落.</p>
+<p style="background-color: #00ff00">这是一个段落.</p>
+<p style="background-color: #0000ff">这是一个段落.</p>
+<button>返回 p Element 的 background-color</button>
+</body>
+</html>

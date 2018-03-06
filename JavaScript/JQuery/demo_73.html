@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--jQuery slideDown()方法用于向下滑动元素
+    $(selector).slideDown(speed,callback);
+    -->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_19</title>
+<script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".flip").click(function(){
+                $(".panel").slideDown("slow");
+            });
+        });
+    </script>
+<style type="text/css">
+    div.panel,p.flip
+    {
+        margin: 1px;
+        padding: 5px;
+        text-align: center;
+        background: #e5eecc;
+        border: solid 1px #c3c3c3;
+    }
+    div.panel
+    {
+        height: 120px;
+        display: none;
+    }
+</style>
+</head>
+<body>
+<div class="panel">
+    <p>宇宙記之China华胜天成-技术教程</p>
+    <p>在华胜天成-技术教程,你可以找到你所需要的所有网站建设教程</p>
+</div>
+<p class="flip">请点击这里</p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    To add class a an elements-->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_51</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").addClass("important blue");
+            });
+        });
+    </script>
+    <style type="text/css">
+        .important
+        {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+        .blue
+        {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">这是一些TXT.</div>
+<div id="div2">这是一些TXT.</div>
+<br>
+<button>向第一个div Element to add class.</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--通过jQuery,可以使用toggle()方法来切换hide()和show()方法
+    show被hide the Element,And hide 已show the Element
+    可选的speed参数规定隐藏/显示的速度,可以取以下值:"slow","fast"或毫秒
+    可选的callback参数的toggle()方法完成后所执行的函数名称
+        -->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_14</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+     $(document).ready(function(){
+         $("button").click(function(){
+             $("p").toggle(1000);
+         });
+     });
+    </script>
+</head>
+<body>
+<button type="button">切换</button>
+<p>这是一个段落。<br/>
+    这是另一个段落。
+</p>
+</body>
+</html>

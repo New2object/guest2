@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--jQuery slideUp()方法用于向上滑动Element:
+    $(selector).slideUp(speed,callback);
+    -->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_20</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".flip").click(function(){
+                $(".panel").slideUp("slow");
+            });
+        });
+    </script>
+    <style type="text/css">
+        div.panel,p.flip
+        {
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+            background: #cc6600;
+            border:solid 1px #c3c3c3;
+        }
+        div.panel
+        {
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+<div class="panel">
+    <p>W3School - 领先的  Web  技术教程站点</p>
+    <p>在W3School,你可以找到你所需要的所有网站建设教程</p>
+</div>
+<p class="flip">请点击这里</p>
+</body>
+</html>

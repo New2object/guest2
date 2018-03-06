@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+    jQuery empty()Method
+    jQuery empty()Method Delete被选Element的子元素
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_48</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").empty();
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="div1" style="height: 100px; width: 300px;border: 1px solid black;background-color: yellow;">
+    This is some text in the div.
+    <p>This is a paragraph in the div.</p>
+    <p>This is a another paragraph in the div.</p>
+</div>
+<br>
+<button>Empty DIV Element</button>
+</body>
+</html>

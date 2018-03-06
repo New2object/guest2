@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    onmouseover和onmouseout事件
+    onmouseover和onmouseout事件可用于在用户的鼠标移至HTML元素上方或者移出元素时触发函数-->
+<head>
+    <meta charset="UTF-8">
+    <title>demo22</title>
+</head>
+<body>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: green; width: 120px; height: 20px;padding: 40px; color: #ffffff;">把鼠标移到上面</div>
+<script>
+    function mOver(obj)
+    {
+        obj.innerHTML='谢谢'
+    }
+    function mOut(obj)
+    {
+        obj.innerHTML="把鼠标移到上面"
+    }
+</script>
+</body>
+</html>

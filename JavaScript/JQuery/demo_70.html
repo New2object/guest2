@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--演示带有不同参数的fadeOut()方法
+    使三个矩形淡出-->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_16</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function(){
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+            });
+        });
+    </script>
+</head>
+<body>
+<p>演示带有不同参数的fadeOut()方法。</p>
+<button>点击这里,使三个矩形淡出</button>
+<br><br>
+<div id="div1" style="width: 80px; height: 80px;background-color: chartreuse;"></div>
+<br>
+<div id="div2" style="width: 80px; height: 80px;background-color: indigo;"></div>
+<br>
+<div id="div3" style="width: 80px; height: 80px;background-color: teal;"></div>
+</body>
+</html>

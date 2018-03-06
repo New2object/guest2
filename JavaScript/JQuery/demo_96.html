@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    attr()的回调函数
+    jQuery方法的attr(),下面的例子演示如何改变 href 和 title的值
+    -->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_42</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#w3s").attr({
+                    "href": "http://www.w3school.com.cn/jquery/",
+                    "title": "W3School jQuery 教程"
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<p><a href="http://www.w3school.com.cn" id="w3s">W3School.com.cn</a></p>
+<button>改变 href 和 title 值</button>
+<p>请把鼠标指针移动到链接上,或者Click该链接,来Selector已经改变的href值和已经设置的title值。</p>
+</body>
+</html>

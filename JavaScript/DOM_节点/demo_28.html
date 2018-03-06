@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Create New HTML Element:
+    如需向HTML DOM添加新元素,必须首先创建该元素(元素节点),然后向一个已存在的元素追加该元素-->
+<head>
+    <meta charset="UTF-8">
+    <title>demo28</title>
+</head>
+<body>
+<div id="div1">
+    <p id="p1">这是一个段落。</p>
+    <p id="p2">这是另一个段落。</p>
+</div>
+</body>
+<script>
+    var para=document.createElement("p");
+    <!--Create New <p> Element-->
+    var node=document.createTextNode("这是新段落。");
+    <!--如需向<p>元素添加文本,必须首先创建文本节点.这段code创建了一个文本节点:-->
+    para.appendChild(node);
+    <!--必须向<p>元素追加这个文本节点:-->
+    var element=document.getElementById("div1");
+    <!--必须向一个已有的元素追加这个新元素-->
+    element.appendChild(para)
+    <!--向这个已有的元素追加新元素-->
+</script>
+</html>

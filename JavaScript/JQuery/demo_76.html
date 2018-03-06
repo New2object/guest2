@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--jQuery效果-动画
+    jQuery animate()方法允许创建自定义的动画
+    语法:$(selector).animate({params},speed,callback);
+    必需的params参数定义形成动画的css属性。
+    可选的speed参数规定效果的时长。可以取以下值:"slow","fast"或毫秒
+    可选的callback参数是动画完成后所执行的函数名称
+    语法:
+        $("button").click(function(){
+            $("div").animate({left:'250px'});
+            });
+    -->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_22</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").animate({left:'250px'});
+            });
+        });
+    </script>
+</head>
+<body>
+<button>开始动画</button>
+<p>默认情况下,所有HTML元素的位置都是静态的,并且无法移动。如需对位置进行操作,记得首先把元素的css
+position 属性设置为relative,fixed或absolute。</p>
+<div style="background: #98bf21;height: 100px;width: 100px;position: absolute;"></div>
+</body>
+</html>

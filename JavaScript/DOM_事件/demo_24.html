@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--onmouseup 事件会在鼠标按键被松开时发生。
+  --onmousedown 事件会在鼠标按键被按下时发生。
+  --onmouseover 事件会在鼠标指针移动到指定的对象上时发生。
+  --onmousemove 事件会在鼠标指针移动时发生。
+     -->
+<head>
+    <meta charset="UTF-8">
+    <title>demo24</title>
+    <script>
+        function lighton()
+        {
+            document.getElementById("myimage").src="img/eg_bulboff.gif";
+        }
+        function lightoff() {
+            document.getElementById("myimage").src="img/eg_bulboff.gif";
+        }
+    </script>
+</head>
+<body>
+<img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="../img/eg_bulboff.gif"/>
+<p>按住鼠标不放可以点亮这盏灯!</p>
+</body>
+</html>

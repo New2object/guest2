@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    jQuery attr()方法也用于设置/改变熟悉值。
+    下面的例子演示如何改变(设置)链接中href属性的值:
+    -->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_41</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#w3s").attr("href","http://www.w3school.com.cn/jquery");
+            });
+        });
+    </script>
+</head>
+<body>
+<p><a href="http://www.w3school.com.cn" id="w3s">W3School.com.cn</a></p>
+<button>改变 href 值</button>
+<p>请把鼠标指针移动到链接上,或者Click该链接,来Selector已经改变的href值。</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    通过after()和before()方法添加若干New Element
+    after()和before()方法能够通过参数接收无限数量的New Element.可以通过text/HTML,jQuery或者JavaScript/Dom来Create Element
+    在下面的例子中,我们Create若干New Element。这些Element可以通过text/HTML,jQuery或者JavaScript/DOM来创建。
+    然后我们通过after()方法把这些Element插入到text中(对before()同样有效):
+    -->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_46</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        function afterText()
+        {
+            var txt1 = "<b> I </b>";     //以HTML Create Element
+            var txt2 = $("<i></i>").text("love ");    //通过 jQuery Create Element
+            var txt3 = document.createElement("big");  //通过DOM Create Element
+            txt3.innerHTML="jQuery!";
+            $("img").after(txt1,txt2,txt3);    //在img 之后插入New Element
+        }
+    </script>
+</head>
+<body>
+<img src="/JavaScript/img/eg_w3school.gif" alt="W3School Logo" />
+<br><br>
+<button onclick="afterText()">在图片后面添加文本</button>
+</body>
+</html>

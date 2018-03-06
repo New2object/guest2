@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--下面的例子把<div>移动到右边,然后增加文本的字号:-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_27</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var div=$("div");
+                div.animate({left:'100px'},"slow");
+                div.animate({height:'80px'},"slow");
+                div.animate({width:'150px'},"slow");
+                div.animate({fontSize:'3em'},"slow");
+            });
+        });
+    </script>
+</head>
+<body>
+<button type="button">Action animate</button>
+<p>默认情况下,所有HTML元素的位置都是静态的,并且无法移动。如需对位置进行操作,记得首先把元素的css position
+    属性设置为relative,fixed或absolute.
+</p>
+<div style="width: 100px; height: 100px;background-color: #9eff92; position: absolute;">HELLO</div>
+</body>
+</html>

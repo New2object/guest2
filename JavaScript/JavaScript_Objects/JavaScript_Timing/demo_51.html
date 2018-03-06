@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--通过使用JavaScript,我们有能力做到在一个设定的时间间隔之后来执行Code,
+    而不是在函数被调用后立即执行,这称之为计时事件
+    var t=setTimeout("javascript语句",毫秒)    ----1000毫秒等于1秒
+    setTimeout() 未来的某时执行代码
+    clearTimeout() 取消setTimeout
+    -->
+<head>
+    <meta charset="UTF-8">
+    <title>demo_51</title>
+    <script type="text/javascript">
+        function timeMsg()
+        {
+            var t=setTimeout("alert('5秒！')",5000)
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="button" onclick="timeMsg()" value="显示定时的警告框">
+</form>
+<p>请点击上面的按钮,警告框会在5s后显示</p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+    Chaining函数,更便捷的方法
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_36</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#p1").css("color", "yellow")
+                        .slideUp(2000)
+                        .slideDown(2000);
+            });
+
+        });
+    </script>
+</head>
+<body>
+<p id="p1">jQuery 乐趣十足!</p>
+<button>Click over here</button>
+</body>
+</html>

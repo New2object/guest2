@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--jQuery slideToggle()方法可以在slideDown()与slideUp()方法之间进行切换。
+    If 元素向下滑动,则slideToggle()可向上滑动它们
+    If 元素向上滑动,则slideToggle()可向下滑动它们
+    语法: $(selector).slideToggle(speed,callback);
+    -->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_21</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".flip").click(function(){
+                $(".panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style type="text/css">
+        div.panel,p.flip
+        {
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+            background: #edecd6;
+            border: solid 1px #66cc66;
+        }
+        div.panel
+        {
+            height: 120px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="panel">
+    <p>W3school - 领先的 Web 技术教程站点</p>
+    <p>在 w3school,你可以找到你所需要的所有网站建设教程。</p>
+</div>
+<p class="flip">请点击这里</p>
+</body>
+</html>

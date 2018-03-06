@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--演示带有不同参数的fadeTo()方法,
+    通过点击,使三个矩形淡出-->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_18</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeTo("slow",0.5);
+                $("#div2").fadeTo("slow",1);
+                $("#div3").fadeTo("slow",1.5);
+            });
+        });
+    </script>
+</head>
+<body>
+<p>演示带有不同参数的fadeTo()方法。</p>
+<button type="button">点击这里,使三个矩形淡出。</button>
+<br><br>
+<div id="div1" style="width: 80px;height: 80px;display: none; background-color: #66cc66;"></div>
+<br>
+<div id="div2" style="width: 80px;height: 80px;display: none; background-color: crimson;"></div>
+<br>
+<div id="div3" style="width: 80px;height: 80px;display: none; background-color: plum;"></div>
+</body>
+</html>

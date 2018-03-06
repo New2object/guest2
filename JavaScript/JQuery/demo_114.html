@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+    Display jQuery document and window的Size
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript_jQuery_60</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var txt = "";
+                txt += "Document width/height: " + $(document).width();
+                txt += "x" + $(document).height() + "\n";
+                txt += "Window width/height: " + $(window).width();
+                txt += "x" + $(window).height();
+                alert(txt);
+            });
+        });
+    </script>
+</head>
+<body>
+<button>显示Document AND Windows 的尺寸</button>
+</body>
+</html>

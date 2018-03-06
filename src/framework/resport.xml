@@ -1,0 +1,10 @@
+<testsuite errors="1" failures="0" name="nose2-junit" skipped="0" tests="1" time="0.003">
+  <testcase classname="nose2.loader.LoadTestsFailure" name="test_login_case" time="0.000000">
+    <error message="test failure">Traceback (most recent call last):
+  File "C:\Users\Hasee\guest2\src\framework\test_login_case.py", line 3, in &lt;module&gt;
+    from src.framework.page.login_page import LoginPage
+ImportError: No module named 'src'
+</error>
+    <system-err />
+  </testcase>
+</testsuite>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--通过jQuery,可以使用hide()和show()方法来隐藏和显示HTML元素-->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_12</title>
+<script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#hide").click(function()
+            {
+                $("p").hide();
+            });
+            $("#show").click(function()
+            {
+                $("p").show();
+            });
+        });
+    </script>
+</head>
+<body>
+<p id="p1">If click "隐藏" 按钮,I go to die.</p>
+<button id="hide" type="button">隐藏</button>
+<button id="show" type="button">显示</button>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+    jQuery outerWidth(true) AND outerHeight(true):
+    outerWidth(true)方法返回元素的Width(包括内边距、边框和外边距)
+    outerHeight(true)方法返回元素的Height(包括内边距、边框和外边距)
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_59</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var txt = "";
+                txt += "Width of div: " + $("#div1").width() + "</br>";
+                txt += "Height of div: " + $("#div1").height()+ "</br>";
+                txt += "Outer width of div: " + $("#div1").outerWidth(true) + "</br>";
+                txt += "Outer height of div: " + $("#div1").outerHeight(true) + "</br>";
+                $("#div1").html(txt);
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="div1" style="height: 150px;width: 300px; padding: 10px;margin: 3px;border: 1px solid blue;background-color: lightblue;">
+</div>
+<button>显示 DIV 的尺寸</button>
+<p>outerWidth(true) - 返回元素的Width(包括内边距和边框、外边距)</p>
+<p>outerHeight(true) - 返回元素的Height(包括内边距和边框、外边距)</p>
+</body>
+</html>

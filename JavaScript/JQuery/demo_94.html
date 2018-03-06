@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    上面的三个jQuery方法: text(),html()以及val(),同样拥有回调函数。回调函数由两个入参:
+        被选Element list中当前元素的下标,以及原始(旧的)值。然后以函数新值返回所希望使用的String
+        -->
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript_jQuery_40</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#test1").text(function(i,origText){
+                    return "Old text: " + origText + "New text: Hello world!(index: " + i + ")";
+                });
+            });
+            $("#btn2").click(function(){
+                $("#test2").text(function(i,origText){
+                    return "Old html: " + origText + "New html: Hello <b>word!</b> (index: " + i +")";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<p id="test1">这是<b>粗体</b>文本。</p>
+<p id="test2">这是另一段<b>粗体</b>文本。</p>
+<button id="btn1">显示旧/新文本</button>
+<button id="btn2">显示旧/新HTML</button>
+</body>
+</html>

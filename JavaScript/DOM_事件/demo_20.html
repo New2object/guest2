@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--onload和onunload事件
+   onload和onunload事件会在用户进入或离开页面时被触发
+   onload事件可用于检测访问者的browser type和browser version,并基于这些信息来加载网页的Correct version
+   -->
+<head>
+    <meta charset="UTF-8">
+    <title>demo20</title>
+</head>
+<body  onload="checkCookies()">
+<script>
+    function checkCookies()
+    {
+        if (navigator.cookieEnabled==true)
+        {
+            alert("已启用 cookie")
+        }
+        else
+        {
+            alert("未启用 cookie")
+        }
+    }
+</script>
+<p>提示框会告诉你,Browser是否启用 cookie.</p>
+</body>
+</html>

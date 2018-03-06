@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo52</title>
+    <script type="text/javascript">
+        function timedText()
+        {
+            var t1=setTimeout("document.getElementById('txt').value='2秒'",2000);
+            var t2=setTimeout("document.getElementById('txt').value='4秒'",4000);
+            var t3=setTimeout("document.getElementById('txt').value='6秒'",6000);
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="button" onclick="timedText()" value="显示计时的文本">
+    <input type="text" id="txt">
+</form>
+<p>点击上面的按钮,输入框会显示出已经逝去的时间(2,4,6秒).</p>
+</body>
+</html>

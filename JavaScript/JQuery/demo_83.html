@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+    $(selector).stop(stopAll,goToEnd);
+    可选的stopAll参数规定是否应该清楚动画队列。默认是false,即仅停止活动的动画,允许任务排入队列的动画向后执行
+    可选的goToEnd参数规定是否立即完成当前动画。默认是false。
+    因此,默认地,stop会清除在被元素上指定的当前animate
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_29</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#start").click(function () {
+                $("div").animate({left: '100px'}, 5000);
+                $("div").animate({fontSize: '3em'}, 5000);
+            });
+            $("#stop").click(function () {
+                $("div").stop();
+            });
+            $("#stop2").click(function () {
+                $("div").stop(true);
+            });
+            $("#stop3").click(function(){
+                $("div").stop(true,true);
+            });
+        });
+    </script>
+</head>
+<body>
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+<button id="stop2">Stop All</button>
+<button id="stop3">STOP BUT FINISH</button>
+<p><b>"START"</b>按钮会启动动画。</p>
+<p><b>"STOP"</b>按钮会停止当前活动的动画,但允许已排队的动画向前执行。</p>
+<p><b>"STOP ALL"</b>按钮会停止当前活动的动画,并清空动画队列;So all animations on the element will stop</p>
+<p><b>"STOP BUT FINISH"</b>会立即完成当前活动的动画,然后停下来。</p>
+<div style="width: 100px;height: 100px;position: absolute;background-color: darkgoldenrod;">HELLO</div>
+</body>
+</html>

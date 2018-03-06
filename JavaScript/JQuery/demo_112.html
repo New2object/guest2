@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+    jQuery outerWidth() AND outerHeight()方法:
+    outerWidth()返回元素的width(包括内边距和边框)
+    outerHeight()返回元素的height(包括内边距和边框)
+    下面的例子返回指定的<div>元素的outer-width/height:
+        $(document).ready(function(){
+            $("button").click(function()
+                var txt = "";
+                txt += "Outer width of div: " + $("#div1").outerWidth() + "</br>";
+                txt += "Outer height of div: " + $("#div1").outerHeight();
+                    $("#div1").html(txt);
+                });
+            });
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript_jQuery_58</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var txt = "";
+                txt += "Width of div: " + $("#div1").width() + "</br>";
+                txt += "Height of div: " + $("#div1").height() +  "</br>";
+                txt += "Outer width of div: " + $("#div1").outerWidth() + "</br>";
+                txt += "Outer height of div: " + $("#div1").outerHeight();
+                $("#div1").html(txt);
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="div1" style="height: 100px; width: 300px;padding: 10px;margin: 3px;border: 1px solid blue;background-color: lightblue">
+</div>
+<br>
+<button>显示 DIV 的尺寸</button>
+<p>OuterWidth() - 返回元素的Width(包括内边距和边框)</p>
+<p>OuterHeight() - 返回元素的Height(包括内边距和边框)</p>
+</body>
+</html>

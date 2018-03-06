@@ -1,0 +1,30 @@
+<!DOCTYPE html >
+<html lang="en">
+<body>
+
+<h1>My Web Page</h1>
+
+<p id="myPar">I am a paragraph.</p>
+<div id="myDiv">I am a div.</div>
+
+<p>
+<button type="button" onclick="test_demo()" >点击这里</button>
+</p>
+<script>
+    function test_demo()
+    {
+        /*
+            下面的这些code会输出
+            一个标题和一个段落
+            并将代表主页的开始
+         */
+        //输出标题:
+        document.getElementById("myPar").innerHTML="Hello World!";
+        //输出段落:
+        document.getElementById("myDiv").innerHTML="How are you?";
+    }
+</script>
+<p>当您点击上面的按钮时，两个元素会改变。</p>
+
+</body>
+</html>

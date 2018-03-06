@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+    jQuery函数涉及动画,这些函数也许会将speed或duration作为可选参数。
+    例如:
+        $("p").hide("slow")
+        speed或duration参数可以设置许多不同的值,比如"slow","fast","normal"或毫秒。
+        -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_31</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").hide(1000);
+            });
+        });
+    </script>
+</head>
+<body>
+<button type="button">隐藏</button>
+<p>这是一个段落。</p>
+<p>这是另一个段落。</p>
+</body>
+</html>

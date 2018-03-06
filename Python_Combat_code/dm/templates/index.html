@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h3>陈煜燊的Bug管理系统
+        <a href="{{ url_for('new')}}" class="btn btn-primary new-defect-btn">创建缺陷</a>
+    </h3>
+    <table class="table table-striped">
+        <thead>
+        <th>标签</th>
+        <th>标题</th>
+        <th>内容</th>
+        <th>提出人</th>
+        <th>编辑</th>
+        <th>操作</th>
+        </thead>
+        <tbody>
+        {% for defect in defects %}
+            <tr>
+                <td><span class="badge badge-{{ defect.tag_type }}">{{ defect.tag_name }}</span></td>
+                <td><a href="{{ url_for('show',defect_id=defect.id) }}">{{ defect.title }}</a></td>
+                <td>{{ defect.content }}</td>
+                <td>{{ defect.author }}</td>
+                <td><a href="{{ url_for('edit',defect_id=defect.id) }}" class="btn btn-primary btn-sm">编辑</a></td>
+                <td><a href="{{ url_for('delete',defect_id=defect.id) }} " onclick="return confirm('确定要删除嚒？')"
+                       class="btn btn-danger btn-sm">删除</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

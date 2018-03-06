@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--在无限循环后,添加了一个"Stop Count"按钮来停止计数器-->
+<head>
+    <meta charset="UTF-8">
+    <title>demo54</title>
+    <script type="text/javascript">
+        var c=0;
+        var t;
+        function timedCount()
+        {
+            document.getElementById('txt').value=c;
+            c=c+1;
+            t=setTimeout("timedCount()", 1000)
+        }
+        function stopCount()
+        {
+            clearTimeout(t)
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="button" value="Start count" onclick="timedCount()">
+    <input type="text" id="txt">
+    <input type="button" value="Stop count" onclick="stopCount()">
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--
+    jQuery DOM操作
+        jQuery 获取href-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_39</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert($("#w2s").attr("href"));
+            });
+        });
+    </script>
+</head>
+<body>
+<p href="http://www.w3school.com.cn" id="w2s">W3school教学链接地址</p>
+<button>获取href</button>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    演示jQuery hide()函数,隐藏所有class="test"的元素
+    基础语法:$(select).action()
+            * 美元符号定义 jQuery
+            * 选择符(select)"查询"和"查找"HTML元素
+            * JQuery的action()执行对元素的操作
+            -->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_7</title>
+<script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".test").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<h2 class="test">This is a heading</h2>
+<p>This is a another paragraph.</p>
+<button type="submit">Click me</button>
+</body>
+</html>

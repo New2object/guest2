@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--演示带有不同参数的fadeToggle()方法
+    使三个矩形淡入淡出-->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_17</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeToggle(1500);
+                $("#div2").fadeToggle(2000);
+                $("#div3").fadeToggle(3000);
+            });
+        });
+    </script>
+</head>
+<body>
+<p>演示带有不同参数的fadeToggle()方法。</p>
+<button>点击这里,使三个矩形淡入淡出</button>
+<br><br>
+<div id="div1" style="width: 80px; height: 80px; display: none;background-color: aquamarine;"></div>
+<br>
+<div id="div2" style="width: 80px;height: 80px;display: none;background-color: lawngreen;"></div>
+<br>
+<div id="div3" style="width: 80px;height: 80px;display: none;background-color: lightgreen;"></div>
+</body>
+</html>

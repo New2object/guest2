@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+    jQuery操作CSS
+    jQuery拥有若干进行css操作的方法,
+        * addClass() - 向被选元素添加一个类或者多个类
+        * removeClass() - 向被选元素删除一个类或者多个类
+        * toggleClass() - 对被选元素进行添加/删除类的切换动作
+        * css() - 设置或返回Style property
+    jQuery addClass() - 方法
+        下面的例子展示如何向不同的元素添加Class属性.Of course,在添加类时,也可以选取多个Element:
+        $("button").click(function(){
+        $("h1,h2,p").addClass("blue");
+        $("div").addClass("important");
+        });
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_105</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1,h2,p").addClass("blue");
+                $("div").addClass("important");
+            });
+        });
+    </script>
+    <style type="text/css">
+        .important
+        {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+        .blue
+        {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<h1>标题 1</h1>
+<h2>标题 2</h2>
+<p>这是一个段落.</p>
+<p>这是另一个段落.</p>
+<div>这是一个非常重要的TXT!</div>
+<br>
+<button> To add a class to an element</button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    onmousedown,onmouseup以及onclick构成了鼠标点击事件的所有部分。首先先点击鼠标事件时,
+    会触发onmousedown事件,当释放鼠标按钮时,会触发Onmouseup事件,最后,当完成鼠标点击时,会触发onclick事件-->
+<head>
+    <meta charset="UTF-8">
+    <title>demo23</title>
+</head>
+<body>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: green; color: #ffffff; width: 90px;height: 20px;padding: 40px;font-size: 12px;">请点击这里</div>
+<script>
+    function mDown(obj)
+    {
+        obj.style.backgroundColor="#1ec5e5";
+        obj.innerHTML="请释放鼠标按钮"
+    }
+    function mUp(obj)
+    {
+        obj.style.backgroundColor="green";
+        obj.innerHTML="请按下鼠标按钮"
+    }
+</script>
+</body>
+</html>

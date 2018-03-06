@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    jQuery拥有可操作HTML元素和属性的强大方法
+    jQuery DOM操作
+        三个简单实用的用于DOM操作的jQuery方法:
+            * text() -设置或返回所选元素的文本内容
+            * html() -设置或返回所选元素的内容(包括HTML标记)
+            * val()  -设置或返回表单字段的值
+
+            下面的例子:演示返回所选Element的text content AND html content
+        -->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_37</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert("Text:" + $("#test").text());
+            });
+            $("#btn2").click(function(){
+                alert("HTML:" + $("#test").html());
+            });
+        });
+    </script>
+</head>
+<body>
+<p id="test">这是段落中的<b>粗体</b>文本</p>
+<button id="btn1">显示文本</button>
+<button id="btn2">显示HTML</button>
+</body>
+</html>

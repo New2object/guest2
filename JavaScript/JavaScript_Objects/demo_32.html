@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--本例使用函数来构造对象: -->
+<head>
+    <meta charset="UTF-8">
+    <title>demo32</title>
+</head>
+<body>
+<script>
+    function person(firstname,lastname,age,eyecolor)
+    {
+        this.firstname=firstname;
+        this.lastname=lastname;
+        this.age=age;
+        this.eyecolor=eyecolor;
+    }
+    myFather = new person("Bill","Gates",56,"blue");
+    document.write(myFather.firstname+"  is  "+myFather.age+" years old.");
+</script>
+</body>
+</html>

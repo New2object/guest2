@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Callback函数 典型语法-->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_jQuery_32</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").hide(2000);
+                alert("The paragraph is now hidden");
+            });
+        })
+    </script>
+</head>
+<body>
+<button type="button">Hide</button>
+<p>This is a paragraph with little content.</p>
+</body>
+</html>

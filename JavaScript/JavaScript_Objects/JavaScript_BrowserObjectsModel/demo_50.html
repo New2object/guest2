@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Tips框经常用于提示用户在进入页面前输入某个值
+    当提示框出现后,用户需要输入某个值,然后点击确认或取消按钮才能继续操作
+    如果用户点击确认,那么返回值为输入的值,如果用户点击取消,那么返回值为null
+    语法:
+        prompt("文本","默认值")-->
+<head>
+    <meta charset="UTF-8">
+    <title>demo50</title>
+    <script type="text/javascript">
+        function disp_prompt()
+        {
+            var name=prompt("请输入您的名字","Bill Gates")
+            if (name!=null && name!="")
+            {
+                document.write("你好！" + name + "今天过得怎么样？")
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" onclick="disp_prompt()" value="显示提示框"/>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+    设置多个CSS 属性
+    如需设置多个CSS 属性,可使用以下语法:
+        css({"propertyName":"value","propertyName":"value",......})
+        $("p").css({"background-color":"yellow","font-size": "150%"});
+        -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript_jQuery_56</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").css({"background-color":"yellow","font_size":"150%"});
+            });
+        });
+    </script>
+</head>
+<body>
+<h2>This is a title.</h2>
+<p style="background-color: #ff0000">这是一个段落。</p>
+<p style="background-color: #00ff00">这是一个段落。</p>
+<p style="background-color: #0000ff">这是一个段落。</p>
+<p>这是一个段落。</p>
+<button>为 p 元素设置多个style</button>
+</body>
+</html>
